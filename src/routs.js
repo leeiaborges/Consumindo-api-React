@@ -1,6 +1,6 @@
 import { Switch, Route } from "react-router-dom";
-import Home from './src/pages/home'
-import Produto from './src/pages/produto/Produto'
+import Home from './pages/home/Home'
+import Produto from './pages/produto/Produto'
 
 export const Routes = () => {
     return (
@@ -9,5 +9,5 @@ export const Routes = () => {
             <Route path="/home" component={Home}/>
             <Route path="/produto/:id" component={Produto}/>
         </Switch>
-    )
+    );
 }
